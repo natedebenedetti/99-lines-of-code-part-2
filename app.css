@@ -1,0 +1,19 @@
+body {
+    background-color: lightgrey;;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;  
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.friend {
+    background-color: lightblue;
+}
