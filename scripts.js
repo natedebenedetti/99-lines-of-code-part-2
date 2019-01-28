@@ -4,18 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     let btn1 = document.createElement('button');
-    btn1.style.display = 'flex';
-    let btn1Text = document.createTextNode('Sing!');
 
+    let btn1Text = document.createTextNode('Sing!');
+    
     btn1.appendChild(btn1Text);
     document.body.appendChild(btn1);
 
     btn1.addEventListener('click', function () {
-        let div = document.createElement('div');
-        div.className = 'friend'
-        document.body.appendChild(div);
 
         for (f = 0; f < friends.length; f++) {
+            let div = document.createElement('div');
+            div.className = 'friend'
+            document.body.appendChild(div);
             let header3 = document.createElement('h3');
             let header3Text = document.createTextNode(friends[f]);
             header3.appendChild(header3Text);
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     let para2 = document.createElement('p');
                     let paratext2 = document.createTextNode(l + " line of code in the file, 1 line of code; " + name + " strikes one out, clears it all out, no more lines of code in the file");
                     para2.appendChild(paratext2);
-                    div.appendChild(para2);                     
+                    div.appendChild(para2);
                 }
             }
 
