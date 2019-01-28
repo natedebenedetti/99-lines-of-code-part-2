@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     var friends = ["Matt", "Brooks", "Dustin", "Jordan", "Chip"];
 
-
+    let btnDiv = document.createElement('div');
+    btnDiv.style.display = 'flex';
+    btnDiv.style.justifyContent = 'center';
+    document.body.appendChild(btnDiv);
 
     let btn1 = document.createElement('button');
-
+    btn1.style.display = 'block';
     let btn1Text = document.createTextNode('Sing!');
     
     btn1.appendChild(btn1Text);
-    document.body.appendChild(btn1);
+    btnDiv.appendChild(btn1);
 
     btn1.addEventListener('click', function () {
 
